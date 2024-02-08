@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3CD06F76-FBB6-4844-91E6-65FC4D8A03BE"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21BC0752-9D87-4BCB-8620-FC8162C0C72D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashkaChoffe/Fonts/Font.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "scriptFont(withStyle:size:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "21BC0752-9D87-4BCB-8620-FC8162C0C72D - 124d3e57733135f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.UIFont.scriptFont(withStyle: __C.UIFontTextStyle, size: CoreGraphics.CGFloat) -&gt; Swift.Optional&lt;__C.UIFont&gt;"
+                  moduleName = "CashkaChoffe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladralovich/Desktop/home/xcode_projects/2024/CashkaChoffe/CashkaChoffe/Fonts/Font.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "21BC0752-9D87-4BCB-8620-FC8162C0C72D - 124d3e57733135f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.UIFont.scriptFont(withStyle: __C.UIFontTextStyle, size: CoreGraphics.CGFloat) -&gt; Swift.Optional&lt;__C.UIFont&gt;"
+                  moduleName = "CashkaChoffe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladralovich/Desktop/home/xcode_projects/2024/CashkaChoffe/CashkaChoffe/Fonts/Font.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E65B933F-C155-4A76-AA53-D7F9694F644B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashkaChoffe/Fonts/Font.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "scriptFont(withStyle:size:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E65B933F-C155-4A76-AA53-D7F9694F644B - 124d3e5773313637"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.UIFont.scriptFont(withStyle: __C.UIFontTextStyle, size: CoreGraphics.CGFloat) -&gt; Swift.Optional&lt;__C.UIFont&gt;"
+                  moduleName = "CashkaChoffe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladralovich/Desktop/home/xcode_projects/2024/CashkaChoffe/CashkaChoffe/Fonts/Font.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "E65B933F-C155-4A76-AA53-D7F9694F644B - 124d3e5773313637"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static __C.UIFont.scriptFont(withStyle: __C.UIFontTextStyle, size: CoreGraphics.CGFloat) -&gt; Swift.Optional&lt;__C.UIFont&gt;"
+                  moduleName = "CashkaChoffe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladralovich/Desktop/home/xcode_projects/2024/CashkaChoffe/CashkaChoffe/Fonts/Font.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F61951DF-0643-459D-B3CD-6A7A2722D60C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CashkaChoffe/Fonts/Font.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "dynamicallyTyped(withStyle:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

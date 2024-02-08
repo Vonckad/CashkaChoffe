@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F067B8F57845FF7F165E63 /* Pods_CashkaChoffe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252E40BB2DC6887CCEADF0D /* Pods_CashkaChoffe.framework */; };
+		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
+		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
+		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
+		C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31C2B751EE80030E451 /* PresenterInterface.swift */; };
+		C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31D2B751EE80030E451 /* ViewInterface.swift */; };
+		C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31E2B751EE80030E451 /* InteractorInterface.swift */; };
+		C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3272B751F6A0030E451 /* LoginInterfaces.swift */; };
+		C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3282B751F6A0030E451 /* LoginPresenter.swift */; };
+		C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3292B751F6A0030E451 /* LoginViewController.swift */; };
+		C990F32F2B751F6A0030E451 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F32A2B751F6A0030E451 /* LoginInteractor.swift */; };
+		C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F32B2B751F6A0030E451 /* LoginWireframe.swift */; };
+		C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3392B752B5F0030E451 /* TitleTextField.swift */; };
+		C990F33C2B75324C0030E451 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F33B2B75324C0030E451 /* AppButton.swift */; };
+		C990F3552B7543DC0030E451 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3542B7543DC0030E451 /* Color.swift */; };
 		C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */; };
 		C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */; };
-		C9A70BE92B751A7C00E1B33E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE82B751A7C00E1B33E /* ViewController.swift */; };
-		C9A70BEC2B751A7C00E1B33E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BEA2B751A7C00E1B33E /* Main.storyboard */; };
 		C9A70BEE2B751A7F00E1B33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BED2B751A7F00E1B33E /* Assets.xcassets */; };
 		C9A70BF12B751A7F00E1B33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BEF2B751A7F00E1B33E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4252E40BB2DC6887CCEADF0D /* Pods_CashkaChoffe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashkaChoffe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F4148F47606D8C819A8846 /* Pods-CashkaChoffe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashkaChoffe.debug.xcconfig"; path = "Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe.debug.xcconfig"; sourceTree = "<group>"; };
+		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
+		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		C990F31C2B751EE80030E451 /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		C990F31D2B751EE80030E451 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		C990F31E2B751EE80030E451 /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		C990F3272B751F6A0030E451 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		C990F3282B751F6A0030E451 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C990F3292B751F6A0030E451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C990F32A2B751F6A0030E451 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C990F32B2B751F6A0030E451 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		C990F3392B752B5F0030E451 /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
+		C990F33B2B75324C0030E451 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		C990F3542B7543DC0030E451 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9A70BE12B751A7C00E1B33E /* CashkaChoffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashkaChoffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9A70BE82B751A7C00E1B33E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9A70BEB2B751A7C00E1B33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9A70BED2B751A7F00E1B33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A70BF02B751A7F00E1B33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A70BF22B751A7F00E1B33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94445F6965EC765A970D642 /* Pods-CashkaChoffe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashkaChoffe.release.xcconfig"; path = "Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,138 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F067B8F57845FF7F165E63 /* Pods_CashkaChoffe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC654E705BE655D02BD9747 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4252E40BB2DC6887CCEADF0D /* Pods_CashkaChoffe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98EC74FAA96BE9739E2E4235 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74F4148F47606D8C819A8846 /* Pods-CashkaChoffe.debug.xcconfig */,
+				E94445F6965EC765A970D642 /* Pods-CashkaChoffe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C990F30E2B751AE30030E451 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3192B751EE80030E451 /* BaseWireframe.swift */,
+				C990F31A2B751EE80030E451 /* FormatterInterface.swift */,
+				C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */,
+				C990F31C2B751EE80030E451 /* PresenterInterface.swift */,
+				C990F31D2B751EE80030E451 /* ViewInterface.swift */,
+				C990F31E2B751EE80030E451 /* InteractorInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		C990F3252B751F4A0030E451 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3372B75249E0030E451 /* Menu */,
+				C990F3362B7524830030E451 /* CoffeeShops */,
+				C990F3262B751F540030E451 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C990F3262B751F540030E451 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3382B752B470030E451 /* Views */,
+				C990F3272B751F6A0030E451 /* LoginInterfaces.swift */,
+				C990F3282B751F6A0030E451 /* LoginPresenter.swift */,
+				C990F3292B751F6A0030E451 /* LoginViewController.swift */,
+				C990F32A2B751F6A0030E451 /* LoginInteractor.swift */,
+				C990F32B2B751F6A0030E451 /* LoginWireframe.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C990F3312B7522580030E451 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */,
+				C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		C990F3322B7522790030E451 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3352B7522A00030E451 /* Models */,
+				C990F3342B7522980030E451 /* Services */,
+				C990F3332B7522830030E451 /* Extensions */,
+				C990F30E2B751AE30030E451 /* VIPER */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C990F3332B7522830030E451 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3542B7543DC0030E451 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C990F3342B7522980030E451 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C990F3352B7522A00030E451 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C990F3362B7524830030E451 /* CoffeeShops */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoffeeShops;
+			sourceTree = "<group>";
+		};
+		C990F3372B75249E0030E451 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C990F3382B752B470030E451 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3392B752B5F0030E451 /* TitleTextField.swift */,
+				C990F33B2B75324C0030E451 /* AppButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C9A70BD82B751A7C00E1B33E = {
 			isa = PBXGroup;
 			children = (
 				C9A70BE32B751A7C00E1B33E /* CashkaChoffe */,
 				C9A70BE22B751A7C00E1B33E /* Products */,
+				98EC74FAA96BE9739E2E4235 /* Pods */,
+				4DC654E705BE655D02BD9747 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +205,9 @@
 		C9A70BE32B751A7C00E1B33E /* CashkaChoffe */ = {
 			isa = PBXGroup;
 			children = (
-				C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */,
-				C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */,
-				C9A70BE82B751A7C00E1B33E /* ViewController.swift */,
-				C9A70BEA2B751A7C00E1B33E /* Main.storyboard */,
+				C990F3312B7522580030E451 /* System */,
+				C990F3252B751F4A0030E451 /* Modules */,
+				C990F3322B7522790030E451 /* Common */,
 				C9A70BED2B751A7F00E1B33E /* Assets.xcassets */,
 				C9A70BEF2B751A7F00E1B33E /* LaunchScreen.storyboard */,
 				C9A70BF22B751A7F00E1B33E /* Info.plist */,
@@ -74,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A70BF52B751A7F00E1B33E /* Build configuration list for PBXNativeTarget "CashkaChoffe" */;
 			buildPhases = (
+				CE49CF4389ADEFE2267BAFFE /* [CP] Check Pods Manifest.lock */,
 				C9A70BDD2B751A7C00E1B33E /* Sources */,
 				C9A70BDE2B751A7C00E1B33E /* Frameworks */,
 				C9A70BDF2B751A7C00E1B33E /* Resources */,
+				2942D8749F4B9077563E256D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +277,80 @@
 			files = (
 				C9A70BF12B751A7F00E1B33E /* LaunchScreen.storyboard in Resources */,
 				C9A70BEE2B751A7F00E1B33E /* Assets.xcassets in Resources */,
-				C9A70BEC2B751A7C00E1B33E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2942D8749F4B9077563E256D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE49CF4389ADEFE2267BAFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashkaChoffe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9A70BDD2B751A7C00E1B33E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A70BE92B751A7C00E1B33E /* ViewController.swift in Sources */,
 				C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */,
+				C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */,
 				C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */,
+				C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */,
+				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
+				C990F3552B7543DC0030E451 /* Color.swift in Sources */,
+				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
+				C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */,
+				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
+				C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */,
+				C990F33C2B75324C0030E451 /* AppButton.swift in Sources */,
+				C990F32F2B751F6A0030E451 /* LoginInteractor.swift in Sources */,
+				C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */,
+				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
+				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
+				C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C9A70BEA2B751A7C00E1B33E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9A70BEB2B751A7C00E1B33E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C9A70BEF2B751A7F00E1B33E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -203,7 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -218,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +462,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -287,26 +483,27 @@
 		};
 		C9A70BF62B751A7F00E1B33E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74F4148F47606D8C819A8846 /* Pods-CashkaChoffe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E4F3RD8E26;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CashkaChoffe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vonkad.yousound.CashkaChoffe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonkad.CashkaChoffe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,26 +512,27 @@
 		};
 		C9A70BF72B751A7F00E1B33E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94445F6965EC765A970D642 /* Pods-CashkaChoffe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E4F3RD8E26;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CashkaChoffe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vonkad.yousound.CashkaChoffe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonkad.CashkaChoffe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
