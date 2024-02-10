@@ -23,11 +23,17 @@ class AppButton: UIButton {
         super.init(coder: coder)
         setupView()
     }
+    
+    func enable(_ flag: Bool) {
+        isEnabled = flag
+        alpha = flag ? 1.0 : 0.7
+    }
 }
 
 // MARK: - extension
 private extension AppButton {
     func setupView() {
+        enable(false)
         backgroundColor = .appButton
         clipsToBounds = true
         layer.cornerRadius = 24

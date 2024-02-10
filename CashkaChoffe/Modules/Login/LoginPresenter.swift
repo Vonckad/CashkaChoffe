@@ -11,11 +11,66 @@ import Foundation
 
 final class LoginPresenter {
     
+    enum LoginState {
+        case login, register
+        
+        var mainButtonTitle: String {
+            switch self {
+            case .login: return "Войти"
+            case .register: return "Регистрация"
+            }
+        }
+        
+        var title: String {
+            switch self {
+            case .login: return "Вход"
+            case .register: return "Регистрация"
+            }
+        }
+        
+        var secondButtonTitle: String {
+            switch self {
+            case .login: return "Регистрация"
+            case .register: return "Войти"
+            }
+        }
+        
+        /// Переключает состояния
+        mutating func toggle() {
+            self = self == .login ? .register : .login
+        }
+    }
+    
     // MARK: - Private properties -
 
     private unowned let view: LoginViewInterface
     private let interactor: LoginInteractorInterface
     private let wireframe: LoginWireframeInterface
+    
+    private var state: LoginState = .login {
+        didSet {
+            view.updateBy(state: state)
+            enableMainButton()
+        }
+    }
+    
+    private var email: String = "" {
+        didSet {
+            enableMainButton()
+        }
+    }
+    
+    private var password: String = "" {
+        didSet {
+            enableMainButton()
+        }
+    }
+    
+    private var retryPassword: String = "" {
+        didSet {
+            enableMainButton()
+        }
+    }
 
     // MARK: - Lifecycle -
 
@@ -23,14 +78,50 @@ final class LoginPresenter {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe
+        self.view.updateBy(state: state)
+    }
+    
+    private func isValidEmail(_ value: String) -> Bool {
+        return value.count > 5 && value.contains("@") && value.contains(".")
+    }
+    
+    private func isValidPassword(_ value: String) -> Bool {
+        return value.count >= 5
+    }
+    
+    private func enableMainButton() {
+        switch state {
+        case .login:
+            view.enableMainButton(!email.isEmpty && !password.isEmpty)
+        case .register:
+            view.enableMainButton(!email.isEmpty && !password.isEmpty && password == retryPassword)
+        }
     }
 }
 
 // MARK: - Extensions -
 
 extension LoginPresenter: LoginPresenterInterface {
-    func authAction(isRegister: Bool, user: UserModel) {
-        interactor.requestAuth(type: isRegister ? .reister : .login, user: user) { [weak self] result in
+    func toggleState() {
+        state.toggle()
+    }
+    
+    func emailTextFieldEditingChanged(_ text: String) {
+        email = isValidEmail(text) ? text : ""
+    }
+    
+    func passwordTextFieldEditingChanged(_ text: String) {
+        password = isValidPassword(text) ? text : ""
+    }
+    
+    func retryPasswordTextFieldEditingChanged(_ text: String) {
+        retryPassword = isValidPassword(text) ? text : ""
+    }
+    
+    func authAction() {
+        let user = UserModel(login: email, password: password)
+        
+        interactor.requestAuth(type: state == .register ? .reister : .login, user: user) { [weak self] result in
             
             guard let self else { return }
             

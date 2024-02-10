@@ -12,42 +12,6 @@ import SnapKit
 
 final class LoginViewController: UIViewController {
     
-    enum LoginViewControllerState {
-        case login, register
-        
-        var mainButtonTitle: String {
-            switch self {
-            case .login: return "Войти"
-            case .register: return "Регистрация"
-            }
-        }
-        
-        var title: String {
-            switch self {
-            case .login: return "Вход"
-            case .register: return "Регистрация"
-            }
-        }
-        
-        var secondButtonTitle: String {
-            switch self {
-            case .login: return "Регистрация"
-            case .register: return "Войти"
-            }
-        }
-        
-        /// Переключает состояния
-        mutating func toggle() {
-            self = self == .login ? .register : .login
-        }
-    }
-    
-    private var state: LoginViewControllerState = .login {
-        didSet {
-            updateView()
-        }
-    }
-    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField, mainButton, secondButton])
         stackView.axis = .vertical
@@ -56,9 +20,9 @@ final class LoginViewController: UIViewController {
         return stackView
     }()
     
-    private var emailTextField = TitleTextField(type: .email)
-    private var passwordTextField = TitleTextField(type: .password)
-    private var retryPasswordTextField = TitleTextField(type: .retryPassword)
+    private let emailTextField = TitleTextField(type: .email, editingChanged: #selector(emailTextFieldEditingChanged))
+    private let passwordTextField = TitleTextField(type: .password, editingChanged: #selector(passwordTextFieldEditingChanged))
+    private let retryPasswordTextField = TitleTextField(type: .retryPassword, editingChanged: #selector(retryPasswordTextFieldEditingChanged))
     private lazy var mainButton = AppButton(action: #selector(mainButtonAction))
     
     private lazy var secondButton: UIButton = {
@@ -67,8 +31,6 @@ final class LoginViewController: UIViewController {
         button.addTarget(self, action: #selector(secondButtonAction), for: .touchUpInside)
         return button
     }()
-    
-    private var currentUser: UserModel?
 
     // MARK: - Public properties -
 
@@ -79,7 +41,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        updateView()
+        
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
 
         NotificationCenter.default.addObserver(self,
@@ -99,16 +61,13 @@ final class LoginViewController: UIViewController {
     // MARK: - Private
     @objc
     private func secondButtonAction() {
-        state.toggle()
+        presenter.toggleState()
     }
     
     @objc
     private func mainButtonAction() {
         hideKeyboard()
-        #warning("перенести в презентер")
-        currentUser = .init(login: "vlad@yandex.ru", password: "12345678")
-        guard let currentUser else { return }
-        presenter.authAction(isRegister: state == .register, user: currentUser)
+        presenter.authAction()
     }
     
     @objc
@@ -135,27 +94,28 @@ final class LoginViewController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
+    @objc
+    private func emailTextFieldEditingChanged() {
+        presenter.emailTextFieldEditingChanged(emailTextField.text ?? "")
+    }
+    
+    @objc
+    private func passwordTextFieldEditingChanged() {
+        presenter.passwordTextFieldEditingChanged(passwordTextField.text ?? "")
+    }
+    
+    @objc
+    private func retryPasswordTextFieldEditingChanged() {
+        presenter.retryPasswordTextFieldEditingChanged(retryPasswordTextField.text ?? "")
+    }
 
 }
 
 // MARK: - Extensions -
 
 extension LoginViewController: LoginViewInterface {
-}
-
-// MARK: - setupView
-private extension LoginViewController {
-    
-    func setupView() {
-        view.backgroundColor = .white
-        view.addSubview(stackView)
-        stackView.snp.makeConstraints { make in
-            make.centerY.equalTo(view)
-            make.leading.trailing.equalTo(view).inset(18)
-        }
-    }
-    
-    func updateView() {
+    func updateBy(state: LoginPresenter.LoginState) {
         title = state.title
         mainButton.setTitle(state.mainButtonTitle, for: .normal)
         secondButton.setTitle(state.secondButtonTitle, for: .normal)
@@ -170,6 +130,23 @@ private extension LoginViewController {
         
         UIView.animate(withDuration: 0.2) {
             self.view.layoutIfNeeded()
+        }
+    }
+    
+    func enableMainButton(_ flag: Bool) {
+        mainButton.enable(flag)
+    }
+}
+
+// MARK: - setupView
+private extension LoginViewController {
+    
+    func setupView() {
+        view.backgroundColor = .white
+        view.addSubview(stackView)
+        stackView.snp.makeConstraints { make in
+            make.centerY.equalTo(view)
+            make.leading.trailing.equalTo(view).inset(18)
         }
     }
 }

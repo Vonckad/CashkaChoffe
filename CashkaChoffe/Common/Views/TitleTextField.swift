@@ -47,6 +47,7 @@ class TitleTextField: UIView {
         textField.isSecureTextEntry = type != .email
         textField.textColor = .appText
         textField.tintColor = .appPlaceholderText
+        textField.textContentType = .oneTimeCode
         textField.attributedPlaceholder = NSAttributedString(
             string: type.placeholder,
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.appPlaceholderText]
@@ -58,10 +59,11 @@ class TitleTextField: UIView {
     
     // MARK: - Life
     
-    init(type: TitleTextFieldType) {
+    init(type: TitleTextFieldType, editingChanged: Selector) {
         self.type = type
         super.init(frame: .zero)
         setupView()
+        textField.addTarget(nil, action: editingChanged, for: .editingChanged)
     }
     
     required init?(coder: NSCoder) {

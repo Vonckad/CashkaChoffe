@@ -14,10 +14,18 @@ protocol LoginWireframeInterface: WireframeInterface {
 }
 
 protocol LoginViewInterface: ViewInterface {
+    func enableMainButton(_ flag: Bool)
+    func updateBy(state: LoginPresenter.LoginState)
 }
 
 protocol LoginPresenterInterface: PresenterInterface {
-    func authAction(isRegister: Bool, user: UserModel)
+    func toggleState()
+    
+    func emailTextFieldEditingChanged(_ text: String)
+    func passwordTextFieldEditingChanged(_ text: String)
+    func retryPasswordTextFieldEditingChanged(_ text: String)
+    
+    func authAction()
 }
 
 protocol LoginInteractorInterface: InteractorInterface {
