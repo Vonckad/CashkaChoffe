@@ -19,10 +19,12 @@ protocol CoffeeShopsViewInterface: ViewInterface {
 
 protocol CoffeeShopsPresenterInterface: PresenterInterface {
     var numberOfItems: Int { get }
-    
-    func item(at indexPath: IndexPath) -> String
+
+    func getCoffe()
+    func item(at indexPath: IndexPath) -> CoffeeShopModel
     func mainButtonAction()
 }
 
 protocol CoffeeShopsInteractorInterface: InteractorInterface {
+    func requestCoffe(completion: @escaping (Result<CoffeeShopModels, NetworkError>) -> Void)
 }

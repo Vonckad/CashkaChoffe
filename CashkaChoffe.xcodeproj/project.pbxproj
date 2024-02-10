@@ -17,6 +17,7 @@
 		C9025F232B77853F00EFE16B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F222B77853F00EFE16B /* Network.swift */; };
 		C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F242B778C8600EFE16B /* NetworkError.swift */; };
 		C9025F272B778F3200EFE16B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F262B778F3200EFE16B /* UserModel.swift */; };
+		C9025F292B77D5CA00EFE16B /* CoffeeShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */; };
 		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
 		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
 		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
@@ -48,6 +49,7 @@
 		C9025F222B77853F00EFE16B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C9025F242B778C8600EFE16B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C9025F262B778F3200EFE16B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopModel.swift; sourceTree = "<group>"; };
 		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				C9025F262B778F3200EFE16B /* UserModel.swift */,
+				C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9025F292B77D5CA00EFE16B /* CoffeeShopModel.swift in Sources */,
 				C9025F162B77646100EFE16B /* CoffeeShopsWireframe.swift in Sources */,
 				C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */,
 				C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */,

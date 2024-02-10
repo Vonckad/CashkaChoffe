@@ -10,12 +10,13 @@ import Foundation
 enum Network {
     
     enum RequsetType {
-        case register, login
+        case register, login, locations
         
         var path: String {
             switch self {
             case .register: return "auth/register"
             case .login: return "auth/login"
+            case .locations: return "locations"
             }
         }
     }
@@ -25,8 +26,11 @@ enum Network {
     private static var session = URLSession(configuration: URLSessionConfiguration.default,
                                      delegate: nil,
                                      delegateQueue: nil)
+    static var token: String = ""
+    
+    private static var paramertsNil: String? = nil
 
-    static func sendRequest<U: Encodable, T: Decodable>(route: RequsetType, paramerts: U, decodeTo: T.Type, completion: @escaping (T?, NetworkError?) -> Void) {
+    static func sendRequest<U: Encodable, T: Decodable>(route: RequsetType, paramerts: U? = paramertsNil, decodeTo: T.Type, completion: @escaping (T?, NetworkError?) -> Void) {
         
         queue.async {
             
@@ -36,16 +40,22 @@ enum Network {
             }
             
             var request = URLRequest(url: url)
-            request.httpMethod = "POST"
+            request.httpMethod = paramerts == nil ? "GET" : "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
             
-            guard let jsonData = try? JSONEncoder().encode(paramerts) else {
-                completion(nil, NetworkError.errorEncodingJson)
-                return
+            if paramerts == nil {
+                request.setValue( "Bearer \(token)", forHTTPHeaderField: "Authorization")
             }
             
-            request.httpBody = jsonData
+            if let paramerts = paramerts {
+                guard let jsonData = try? JSONEncoder().encode(paramerts) else {
+                    completion(nil, NetworkError.errorEncodingJson)
+                    return
+                }
+                
+                request.httpBody = jsonData
+            }
             
             let task = self.session.dataTask(with: request) {  data, response, error in
                 

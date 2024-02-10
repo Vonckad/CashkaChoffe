@@ -18,6 +18,7 @@ final class LoginInteractor {
 // MARK: - Extensions -
 
 extension LoginInteractor: LoginInteractorInterface {
+    
     func requestAuth(type: LoginInteractor.RequsetType,
                  user: UserModel,
                  completion: @escaping (Result<TokenModel, NetworkError>) -> Void) {
@@ -38,6 +39,7 @@ extension LoginInteractor: LoginInteractorInterface {
             }
             
             if let token = token {
+                Network.token = token.token
                 completion(.success(token))
                 return
             }

@@ -15,4 +15,19 @@ final class CoffeeShopsInteractor {
 // MARK: - Extensions -
 
 extension CoffeeShopsInteractor: CoffeeShopsInteractorInterface {
+   
+    func requestCoffe(completion: @escaping (Result<CoffeeShopModels, NetworkError>) -> Void) {
+       
+        Network.sendRequest(route: .locations, decodeTo: CoffeeShopModels.self) { response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let coffeShopModels = response {
+                completion(.success(coffeShopModels))
+                return
+            }
+        }
+    }
 }

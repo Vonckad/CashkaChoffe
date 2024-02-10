@@ -13,7 +13,7 @@ final class CoffeeShopsPresenter {
     
     // MARK: - Private properties -
     
-    private var items: [String] = ["dfasdf", "fqwfe", "fqwef", "qewfqewf", "wefwregr","dfasdf", "fqwfe", "fqwef", "qewfqewf", "wefwregr","dfasdf", "fqwfe", "fqwef", "qewfqewf", "wefwregr"] {
+    private var items: CoffeeShopModels = [] {
         didSet {
             view.reloadData()
         }
@@ -39,11 +39,27 @@ extension CoffeeShopsPresenter: CoffeeShopsPresenterInterface {
         items.count
     }
     
-    func item(at indexPath: IndexPath) -> String {
+    func item(at indexPath: IndexPath) -> CoffeeShopModel {
         items[indexPath.row]
     }
     
     func mainButtonAction() {
         wireframe.openMap()
+    }
+    
+    func getCoffe() {
+        interactor.requestCoffe { [weak self] result in
+            
+            guard let self else { return }
+            
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let success):
+                    self.items = success
+                case .failure(let failure):
+                    print("#debug failure = \(failure)")
+                }
+            }
+        }
     }
 }

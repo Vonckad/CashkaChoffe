@@ -31,8 +31,9 @@ final class CoffeeShopsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Ближайшие кофейни"
         setupView()
-        updateView()
+        presenter.getCoffe()
     }
     
     // MARK: - Private
@@ -67,10 +68,6 @@ private extension CoffeeShopsViewController {
             make.top.equalTo(tableView.snp.bottom).offset(18)
         }
     }
-    
-    func updateView() {
-        title = "Ближайшие кофейни"
-    }
 }
 
 // MARK: - UITableViewDataSource
@@ -92,8 +89,8 @@ extension CoffeeShopsViewController: UITableViewDataSource {
         
         let item = presenter.item(at: indexPath)
         
-        configuration.text = item
-        configuration.secondaryText = "secondaryText"
+        configuration.text = item.name
+        configuration.secondaryText = "\(item.id)"
         cell.contentConfiguration = configuration
         
         return cell
