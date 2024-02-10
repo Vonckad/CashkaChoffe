@@ -29,4 +29,8 @@ final class LoginWireframe: BaseWireframe<LoginViewController> {
 // MARK: - Extensions -
 
 extension LoginWireframe: LoginWireframeInterface {
+    func goToCoffeeShops() {
+        navigationController?.setRootWireframe(CoffeeShopsWireframe())
+    }
+    
 }

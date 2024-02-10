@@ -10,12 +10,14 @@
 import UIKit
 
 protocol LoginWireframeInterface: WireframeInterface {
+    func goToCoffeeShops()
 }
 
 protocol LoginViewInterface: ViewInterface {
 }
 
 protocol LoginPresenterInterface: PresenterInterface {
+    func loginAction()
 }
 
 protocol LoginInteractorInterface: InteractorInterface {

@@ -29,4 +29,7 @@ final class LoginPresenter {
 // MARK: - Extensions -
 
 extension LoginPresenter: LoginPresenterInterface {
+    func loginAction() {
+        wireframe.goToCoffeeShops()
+    }
 }

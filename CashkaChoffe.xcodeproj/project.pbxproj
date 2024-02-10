@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		38F067B8F57845FF7F165E63 /* Pods_CashkaChoffe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252E40BB2DC6887CCEADF0D /* Pods_CashkaChoffe.framework */; };
+		C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F0D2B77646000EFE16B /* CoffeeShopsInterfaces.swift */; };
+		C9025F132B77646100EFE16B /* CoffeeShopsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F0E2B77646000EFE16B /* CoffeeShopsPresenter.swift */; };
+		C9025F142B77646100EFE16B /* CoffeeShopsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F0F2B77646000EFE16B /* CoffeeShopsViewController.swift */; };
+		C9025F152B77646100EFE16B /* CoffeeShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F102B77646000EFE16B /* CoffeeShopsInteractor.swift */; };
+		C9025F162B77646100EFE16B /* CoffeeShopsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F112B77646000EFE16B /* CoffeeShopsWireframe.swift */; };
+		C9025F192B77822200EFE16B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F182B77822200EFE16B /* MapViewController.swift */; };
 		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
 		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
 		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
@@ -30,6 +36,12 @@
 /* Begin PBXFileReference section */
 		4252E40BB2DC6887CCEADF0D /* Pods_CashkaChoffe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashkaChoffe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F4148F47606D8C819A8846 /* Pods-CashkaChoffe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashkaChoffe.debug.xcconfig"; path = "Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe.debug.xcconfig"; sourceTree = "<group>"; };
+		C9025F0D2B77646000EFE16B /* CoffeeShopsInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsInterfaces.swift; sourceTree = "<group>"; };
+		C9025F0E2B77646000EFE16B /* CoffeeShopsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsPresenter.swift; sourceTree = "<group>"; };
+		C9025F0F2B77646000EFE16B /* CoffeeShopsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsViewController.swift; sourceTree = "<group>"; };
+		C9025F102B77646000EFE16B /* CoffeeShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsInteractor.swift; sourceTree = "<group>"; };
+		C9025F112B77646000EFE16B /* CoffeeShopsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsWireframe.swift; sourceTree = "<group>"; };
+		C9025F182B77822200EFE16B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -81,6 +93,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C9025F1A2B77841000EFE16B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C9025F182B77822200EFE16B /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		C9025F212B77844900EFE16B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C990F3392B752B5F0030E451 /* TitleTextField.swift */,
+				C990F33B2B75324C0030E451 /* AppButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C990F30E2B751AE30030E451 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +136,6 @@
 		C990F3262B751F540030E451 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				C990F3382B752B470030E451 /* Views */,
 				C990F3272B751F6A0030E451 /* LoginInterfaces.swift */,
 				C990F3282B751F6A0030E451 /* LoginPresenter.swift */,
 				C990F3292B751F6A0030E451 /* LoginViewController.swift */,
@@ -129,6 +157,7 @@
 		C990F3322B7522790030E451 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C9025F212B77844900EFE16B /* Views */,
 				C990F3352B7522A00030E451 /* Models */,
 				C990F3342B7522980030E451 /* Services */,
 				C990F3332B7522830030E451 /* Extensions */,
@@ -161,6 +190,12 @@
 		C990F3362B7524830030E451 /* CoffeeShops */ = {
 			isa = PBXGroup;
 			children = (
+				C9025F0D2B77646000EFE16B /* CoffeeShopsInterfaces.swift */,
+				C9025F0E2B77646000EFE16B /* CoffeeShopsPresenter.swift */,
+				C9025F0F2B77646000EFE16B /* CoffeeShopsViewController.swift */,
+				C9025F102B77646000EFE16B /* CoffeeShopsInteractor.swift */,
+				C9025F112B77646000EFE16B /* CoffeeShopsWireframe.swift */,
+				C9025F1A2B77841000EFE16B /* Map */,
 			);
 			path = CoffeeShops;
 			sourceTree = "<group>";
@@ -170,15 +205,6 @@
 			children = (
 			);
 			path = Menu;
-			sourceTree = "<group>";
-		};
-		C990F3382B752B470030E451 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C990F3392B752B5F0030E451 /* TitleTextField.swift */,
-				C990F33B2B75324C0030E451 /* AppButton.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C9A70BD82B751A7C00E1B33E = {
@@ -326,9 +352,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9025F162B77646100EFE16B /* CoffeeShopsWireframe.swift in Sources */,
 				C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */,
 				C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */,
+				C9025F142B77646100EFE16B /* CoffeeShopsViewController.swift in Sources */,
 				C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */,
+				C9025F152B77646100EFE16B /* CoffeeShopsInteractor.swift in Sources */,
 				C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */,
 				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
 				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
@@ -336,11 +365,14 @@
 				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
 				C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */,
 				C990F33C2B75324C0030E451 /* AppButton.swift in Sources */,
+				C9025F192B77822200EFE16B /* MapViewController.swift in Sources */,
 				C990F32F2B751F6A0030E451 /* LoginInteractor.swift in Sources */,
 				C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */,
 				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
 				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
 				C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */,
+				C9025F132B77646100EFE16B /* CoffeeShopsPresenter.swift in Sources */,
+				C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

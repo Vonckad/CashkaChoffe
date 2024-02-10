@@ -58,7 +58,7 @@ final class LoginViewController: UIViewController {
     
     private var emailTextField = TitleTextField(type: .email)
     private var passwordTextField = TitleTextField(type: .password)
-    private var retryPasswordTextField = TitleTextField(type: .password)
+    private var retryPasswordTextField = TitleTextField(type: .retryPassword)
     private lazy var mainButton = AppButton(action: #selector(mainButtonAction))
     
     private lazy var secondButton: UIButton = {
@@ -103,6 +103,7 @@ final class LoginViewController: UIViewController {
     @objc
     private func mainButtonAction() {
         hideKeyboard()
+        presenter.loginAction()
     }
     
     @objc
