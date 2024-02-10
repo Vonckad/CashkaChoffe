@@ -10,12 +10,12 @@ import UIKit
 class TitleTextField: UIView {
     
     enum TitleTextFieldType {
-        case email, password
+        case email, password, retryPassword
         
         var placeholder: String {
             switch self {
             case .email: return "example@example.ru"
-            case .password: return "******"
+            case .password, .retryPassword: return "******"
             }
         }
         
@@ -23,6 +23,7 @@ class TitleTextField: UIView {
             switch self {
             case .email: return "e-mail"
             case .password: return "Пароль"
+            case .retryPassword: return "Повторите пароль"
             }
         }
     }
@@ -43,7 +44,7 @@ class TitleTextField: UIView {
         textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor.appText.cgColor
         textField.keyboardType = type == .email ? .emailAddress : .default
-        textField.isSecureTextEntry = type == .password
+        textField.isSecureTextEntry = type != .email
         textField.textColor = .appText
         textField.tintColor = .appPlaceholderText
         textField.attributedPlaceholder = NSAttributedString(

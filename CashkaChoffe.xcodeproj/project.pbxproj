@@ -21,7 +21,6 @@
 		C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F32B2B751F6A0030E451 /* LoginWireframe.swift */; };
 		C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3392B752B5F0030E451 /* TitleTextField.swift */; };
 		C990F33C2B75324C0030E451 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F33B2B75324C0030E451 /* AppButton.swift */; };
-		C990F3552B7543DC0030E451 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3542B7543DC0030E451 /* Color.swift */; };
 		C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */; };
 		C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */; };
 		C9A70BEE2B751A7F00E1B33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BED2B751A7F00E1B33E /* Assets.xcassets */; };
@@ -44,7 +43,6 @@
 		C990F32B2B751F6A0030E451 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		C990F3392B752B5F0030E451 /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
 		C990F33B2B75324C0030E451 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
-		C990F3542B7543DC0030E451 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C9A70BE12B751A7C00E1B33E /* CashkaChoffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashkaChoffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A70BE42B751A7C00E1B33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,7 +140,6 @@
 		C990F3332B7522830030E451 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C990F3542B7543DC0030E451 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 				C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */,
 				C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */,
 				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
-				C990F3552B7543DC0030E451 /* Color.swift in Sources */,
 				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
 				C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */,
 				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
@@ -487,9 +483,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E4F3RD8E26;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CashkaChoffe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,9 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E4F3RD8E26;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CashkaChoffe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

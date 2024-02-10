@@ -11,9 +11,8 @@ class AppButton: UIButton {
     
     // MARK: - Life
     
-    init(title: String, action: Selector) {
+    init(action: Selector) {
         super.init(frame: .zero)
-        setTitle(title, for: .normal)
         setTitleColor(.appButtonText, for: .normal)
         titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
         addTarget(nil, action: action, for: .touchUpInside)
