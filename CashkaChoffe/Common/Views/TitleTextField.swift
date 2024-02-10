@@ -69,6 +69,10 @@ class TitleTextField: UIView {
         super.init(coder: coder)
         setupView()
     }
+    
+    var text: String? {
+        textField.text
+    }
 }
 
 // MARK: - extension

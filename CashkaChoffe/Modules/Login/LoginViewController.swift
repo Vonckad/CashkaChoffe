@@ -67,6 +67,8 @@ final class LoginViewController: UIViewController {
         button.addTarget(self, action: #selector(secondButtonAction), for: .touchUpInside)
         return button
     }()
+    
+    private var currentUser: UserModel?
 
     // MARK: - Public properties -
 
@@ -103,7 +105,10 @@ final class LoginViewController: UIViewController {
     @objc
     private func mainButtonAction() {
         hideKeyboard()
-        presenter.loginAction()
+        #warning("перенести в презентер")
+        currentUser = .init(login: "vlad@yandex.ru", password: "12345678")
+        guard let currentUser else { return }
+        presenter.authAction(isRegister: state == .register, user: currentUser)
     }
     
     @objc

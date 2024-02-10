@@ -17,8 +17,9 @@ protocol LoginViewInterface: ViewInterface {
 }
 
 protocol LoginPresenterInterface: PresenterInterface {
-    func loginAction()
+    func authAction(isRegister: Bool, user: UserModel)
 }
 
 protocol LoginInteractorInterface: InteractorInterface {
+    func requestAuth(type: LoginInteractor.RequsetType, user: UserModel, completion: @escaping (Result<TokenModel, NetworkError>) -> Void)
 }

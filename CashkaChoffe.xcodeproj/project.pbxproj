@@ -14,6 +14,9 @@
 		C9025F152B77646100EFE16B /* CoffeeShopsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F102B77646000EFE16B /* CoffeeShopsInteractor.swift */; };
 		C9025F162B77646100EFE16B /* CoffeeShopsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F112B77646000EFE16B /* CoffeeShopsWireframe.swift */; };
 		C9025F192B77822200EFE16B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F182B77822200EFE16B /* MapViewController.swift */; };
+		C9025F232B77853F00EFE16B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F222B77853F00EFE16B /* Network.swift */; };
+		C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F242B778C8600EFE16B /* NetworkError.swift */; };
+		C9025F272B778F3200EFE16B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F262B778F3200EFE16B /* UserModel.swift */; };
 		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
 		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
 		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
@@ -42,6 +45,9 @@
 		C9025F102B77646000EFE16B /* CoffeeShopsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsInteractor.swift; sourceTree = "<group>"; };
 		C9025F112B77646000EFE16B /* CoffeeShopsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopsWireframe.swift; sourceTree = "<group>"; };
 		C9025F182B77822200EFE16B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C9025F222B77853F00EFE16B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C9025F242B778C8600EFE16B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C9025F262B778F3200EFE16B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 		C990F3342B7522980030E451 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C9025F222B77853F00EFE16B /* Network.swift */,
+				C9025F242B778C8600EFE16B /* NetworkError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 		C990F3352B7522A00030E451 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C9025F262B778F3200EFE16B /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,17 +371,20 @@
 				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
 				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
 				C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */,
+				C9025F272B778F3200EFE16B /* UserModel.swift in Sources */,
 				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
 				C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */,
 				C990F33C2B75324C0030E451 /* AppButton.swift in Sources */,
 				C9025F192B77822200EFE16B /* MapViewController.swift in Sources */,
 				C990F32F2B751F6A0030E451 /* LoginInteractor.swift in Sources */,
 				C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */,
+				C9025F232B77853F00EFE16B /* Network.swift in Sources */,
 				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
 				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
 				C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */,
 				C9025F132B77646100EFE16B /* CoffeeShopsPresenter.swift in Sources */,
 				C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */,
+				C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

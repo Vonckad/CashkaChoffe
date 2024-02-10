@@ -10,9 +10,37 @@
 import Foundation
 
 final class LoginInteractor {
+    enum RequsetType {
+        case reister, login
+    }
 }
 
 // MARK: - Extensions -
 
 extension LoginInteractor: LoginInteractorInterface {
+    func requestAuth(type: LoginInteractor.RequsetType,
+                 user: UserModel,
+                 completion: @escaping (Result<TokenModel, NetworkError>) -> Void) {
+        
+        var networkRequestType: Network.RequsetType {
+            switch type {
+            case .reister: return .register
+            case .login: return .login
+            }
+        }
+        
+        Network.sendRequest(route: networkRequestType,
+                            paramerts: user,
+                            decodeTo: TokenModel.self) { token, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            if let token = token {
+                completion(.success(token))
+                return
+            }
+        }
+    }
 }

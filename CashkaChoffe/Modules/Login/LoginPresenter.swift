@@ -29,7 +29,18 @@ final class LoginPresenter {
 // MARK: - Extensions -
 
 extension LoginPresenter: LoginPresenterInterface {
-    func loginAction() {
-        wireframe.goToCoffeeShops()
+    func authAction(isRegister: Bool, user: UserModel) {
+        interactor.requestAuth(type: isRegister ? .reister : .login, user: user) { [weak self] result in
+            
+            guard let self else { return }
+            
+            switch result {
+            case .success(let success):
+                print("#debug success = \(success.token)")
+                wireframe.goToCoffeeShops()
+            case .failure(let failure):
+                print("#debug failure = \(failure.localizedDescription)")
+            }
+        }
     }
 }
