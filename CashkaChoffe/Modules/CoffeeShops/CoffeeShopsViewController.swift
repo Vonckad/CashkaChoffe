@@ -32,6 +32,7 @@ final class CoffeeShopsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Ближайшие кофейни"
+        navigationItem.backButtonTitle = ""
         setupView()
         presenter.getCoffe()
     }

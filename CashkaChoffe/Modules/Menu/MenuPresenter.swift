@@ -16,6 +16,8 @@ final class MenuPresenter {
     private unowned let view: MenuViewInterface
     private let interactor: MenuInteractorInterface
     private let wireframe: MenuWireframeInterface
+    
+    private var items: CoffeeModels = []
 
     // MARK: - Lifecycle -
 
@@ -25,11 +27,15 @@ final class MenuPresenter {
         self.wireframe = wireframe
         
         interactor.getMenu { result in
-            switch result {
-            case .success(let success):
-                print("#debug success = \(success)")
-            case .failure(let failure):
-                print("#debug failure = \(failure.localizedDescription)")
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let success):
+                    print("#debug success = \(success)")
+                    self.items = success
+                    view.reloadData()
+                case .failure(let failure):
+                    print("#debug failure = \(failure.localizedDescription)")
+                }
             }
         }
     }
@@ -38,4 +44,16 @@ final class MenuPresenter {
 // MARK: - Extensions -
 
 extension MenuPresenter: MenuPresenterInterface {
+    var numberOfItems: Int {
+        items.count
+    }
+    
+    func item(at indexPath: IndexPath) -> CoffeeModel {
+        items[indexPath.row]
+    }
+    
+    func didSelectItem(at indexPath: IndexPath) {
+        print("#debug didSelectItem = \(item(at: indexPath))")
+    }
+    
 }

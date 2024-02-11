@@ -81,4 +81,32 @@ enum Network {
         }
         
     }
+    
+    static func loadImage(urlString: String, completion: @escaping (Result<Data, NetworkError>) -> Void) {
+        queue.async {
+            
+            guard let url = URL(string: urlString) else {
+                completion(.failure(.invalidURL))
+                return
+            }
+            
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            
+            let task = self.session.dataTask(with: request) {  data, response, error in
+                
+                DispatchQueue.main.async {
+                    
+                    guard let data = data, error == nil else {
+                        completion(.failure(.nilResponse))
+                        return
+                    }
+                    
+                    completion(.success(data))
+                }
+            }
+            
+            task.resume()
+        }
+    }
 }

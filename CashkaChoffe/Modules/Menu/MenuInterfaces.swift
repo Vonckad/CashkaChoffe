@@ -13,9 +13,14 @@ protocol MenuWireframeInterface: WireframeInterface {
 }
 
 protocol MenuViewInterface: ViewInterface {
+    func reloadData()
 }
 
 protocol MenuPresenterInterface: PresenterInterface {
+    var numberOfItems: Int { get }
+
+    func item(at indexPath: IndexPath) -> CoffeeModel
+    func didSelectItem(at indexPath: IndexPath)
 }
 
 protocol MenuInteractorInterface: InteractorInterface {
