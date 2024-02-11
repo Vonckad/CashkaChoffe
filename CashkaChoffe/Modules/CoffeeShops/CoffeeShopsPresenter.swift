@@ -62,4 +62,8 @@ extension CoffeeShopsPresenter: CoffeeShopsPresenterInterface {
             }
         }
     }
+    
+    func didSelectItem(at indexPath: IndexPath) {
+        wireframe.openMenu(id: item(at: indexPath).id)
+    }
 }

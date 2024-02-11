@@ -93,6 +93,7 @@ extension CoffeeShopsViewController: UITableViewDataSource {
 extension CoffeeShopsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectItem(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

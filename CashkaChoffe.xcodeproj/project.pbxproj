@@ -18,6 +18,12 @@
 		C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F242B778C8600EFE16B /* NetworkError.swift */; };
 		C9025F272B778F3200EFE16B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F262B778F3200EFE16B /* UserModel.swift */; };
 		C9025F292B77D5CA00EFE16B /* CoffeeShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */; };
+		C91C6E542B792C27005FEAFB /* MenuInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E4F2B792C27005FEAFB /* MenuInterfaces.swift */; };
+		C91C6E552B792C27005FEAFB /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E502B792C27005FEAFB /* MenuPresenter.swift */; };
+		C91C6E562B792C27005FEAFB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E512B792C27005FEAFB /* MenuViewController.swift */; };
+		C91C6E572B792C27005FEAFB /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E522B792C27005FEAFB /* MenuInteractor.swift */; };
+		C91C6E582B792C27005FEAFB /* MenuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E532B792C27005FEAFB /* MenuWireframe.swift */; };
+		C91C6E5A2B793025005FEAFB /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E592B793025005FEAFB /* CoffeeModel.swift */; };
 		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
 		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
 		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
@@ -51,6 +57,12 @@
 		C9025F242B778C8600EFE16B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		C9025F262B778F3200EFE16B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopModel.swift; sourceTree = "<group>"; };
+		C91C6E4F2B792C27005FEAFB /* MenuInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInterfaces.swift; sourceTree = "<group>"; };
+		C91C6E502B792C27005FEAFB /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		C91C6E512B792C27005FEAFB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C91C6E522B792C27005FEAFB /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		C91C6E532B792C27005FEAFB /* MenuWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWireframe.swift; sourceTree = "<group>"; };
+		C91C6E592B793025005FEAFB /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -198,6 +210,7 @@
 			children = (
 				C9025F262B778F3200EFE16B /* UserModel.swift */,
 				C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */,
+				C91C6E592B793025005FEAFB /* CoffeeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -218,6 +231,11 @@
 		C990F3372B75249E0030E451 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C91C6E4F2B792C27005FEAFB /* MenuInterfaces.swift */,
+				C91C6E502B792C27005FEAFB /* MenuPresenter.swift */,
+				C91C6E512B792C27005FEAFB /* MenuViewController.swift */,
+				C91C6E522B792C27005FEAFB /* MenuInteractor.swift */,
+				C91C6E532B792C27005FEAFB /* MenuWireframe.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -369,17 +387,21 @@
 			files = (
 				C9025F292B77D5CA00EFE16B /* CoffeeShopModel.swift in Sources */,
 				C9025F162B77646100EFE16B /* CoffeeShopsWireframe.swift in Sources */,
+				C91C6E542B792C27005FEAFB /* MenuInterfaces.swift in Sources */,
 				C9A70BE52B751A7C00E1B33E /* AppDelegate.swift in Sources */,
 				C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */,
+				C91C6E5A2B793025005FEAFB /* CoffeeModel.swift in Sources */,
 				C9025F142B77646100EFE16B /* CoffeeShopsViewController.swift in Sources */,
 				C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */,
 				C9025F152B77646100EFE16B /* CoffeeShopsInteractor.swift in Sources */,
 				C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */,
+				C91C6E562B792C27005FEAFB /* MenuViewController.swift in Sources */,
 				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
 				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
 				C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */,
 				C9025F272B778F3200EFE16B /* UserModel.swift in Sources */,
 				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
+				C91C6E572B792C27005FEAFB /* MenuInteractor.swift in Sources */,
 				C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */,
 				C990F33C2B75324C0030E451 /* AppButton.swift in Sources */,
 				C9025F192B77822200EFE16B /* MapViewController.swift in Sources */,
@@ -388,11 +410,13 @@
 				C9025F232B77853F00EFE16B /* Network.swift in Sources */,
 				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
 				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
+				C91C6E582B792C27005FEAFB /* MenuWireframe.swift in Sources */,
 				C9C2095B2B789A29001A4F64 /* CoffeeTableViewCell.swift in Sources */,
 				C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */,
 				C9025F132B77646100EFE16B /* CoffeeShopsPresenter.swift in Sources */,
 				C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */,
 				C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */,
+				C91C6E552B792C27005FEAFB /* MenuPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

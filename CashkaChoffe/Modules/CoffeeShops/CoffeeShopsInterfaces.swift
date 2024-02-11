@@ -11,6 +11,7 @@ import UIKit
 
 protocol CoffeeShopsWireframeInterface: WireframeInterface {
     func openMap()
+    func openMenu(id: Int)
 }
 
 protocol CoffeeShopsViewInterface: ViewInterface {
@@ -23,6 +24,7 @@ protocol CoffeeShopsPresenterInterface: PresenterInterface {
     func getCoffe()
     func item(at indexPath: IndexPath) -> CoffeeShopModel
     func mainButtonAction()
+    func didSelectItem(at indexPath: IndexPath)
 }
 
 protocol CoffeeShopsInteractorInterface: InteractorInterface {

@@ -10,13 +10,14 @@ import Foundation
 enum Network {
     
     enum RequsetType {
-        case register, login, locations
+        case register, login, locations, menu(id: Int)
         
         var path: String {
             switch self {
             case .register: return "auth/register"
             case .login: return "auth/login"
             case .locations: return "locations"
+            case .menu(id: let id): return "location/\(id)/menu"
             }
         }
     }

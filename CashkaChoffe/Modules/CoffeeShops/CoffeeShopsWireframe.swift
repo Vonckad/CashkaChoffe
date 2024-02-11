@@ -32,4 +32,8 @@ extension CoffeeShopsWireframe: CoffeeShopsWireframeInterface {
     func openMap() {
         navigationController?.pushViewController(MapViewController(), animated: true)
     }
+    
+    func openMenu(id: Int) {
+        navigationController?.pushWireframe(MenuWireframe(id: id))
+    }
 }
