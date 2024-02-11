@@ -13,11 +13,11 @@ final class CoffeeShopsViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CoffeeTableViewCell.self, forCellReuseIdentifier: "CoffeeTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.selectionFollowsFocus = false
         tableView.separatorStyle = .none
+        tableView.contentInset = .init(top: 15, left: 0, bottom: 0, right: 0)
         return tableView
     }()
     
@@ -58,14 +58,16 @@ private extension CoffeeShopsViewController {
     func setupView() {
         view.backgroundColor = .white
         mainButton.setTitle("На карте", for: .normal)
+        mainButton.enable(true)
         view.addSubview(tableView)
         view.addSubview(mainButton)
         tableView.snp.makeConstraints { make in
             make.top.leading.trailing.equalTo(view)
         }
         mainButton.snp.makeConstraints { make in
-            make.leading.trailing.bottom.equalTo(view).offset(18).inset(18)
+            make.leading.trailing.equalTo(view).offset(18).inset(18)
             make.top.equalTo(tableView.snp.bottom).offset(18)
+            make.bottom.equalTo(view.snp.bottomMargin).offset(20)
         }
     }
 }
@@ -77,21 +79,11 @@ extension CoffeeShopsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeTableViewCell", for: indexPath)
         
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.appButtonText
-        cell.backgroundView = backgroundView
-        
-        var configuration = UIListContentConfiguration.subtitleCell()
-        configuration.secondaryTextProperties.color = .appPlaceholderText
-        configuration.textProperties.color = .appText
-        
+        guard let cell = cell as? CoffeeTableViewCell else { return cell }
         let item = presenter.item(at: indexPath)
-        
-        configuration.text = item.name
-        configuration.secondaryText = "\(item.id)"
-        cell.contentConfiguration = configuration
+        cell.configure(mainText: item.name, secondText: "\(item.id)")
         
         return cell
     }

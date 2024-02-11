@@ -35,6 +35,7 @@
 		C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A70BE62B751A7C00E1B33E /* SceneDelegate.swift */; };
 		C9A70BEE2B751A7F00E1B33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BED2B751A7F00E1B33E /* Assets.xcassets */; };
 		C9A70BF12B751A7F00E1B33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A70BEF2B751A7F00E1B33E /* LaunchScreen.storyboard */; };
+		C9C2095B2B789A29001A4F64 /* CoffeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2095A2B789A29001A4F64 /* CoffeeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		C9A70BED2B751A7F00E1B33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A70BF02B751A7F00E1B33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A70BF22B751A7F00E1B33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9C2095A2B789A29001A4F64 /* CoffeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTableViewCell.swift; sourceTree = "<group>"; };
 		E94445F6965EC765A970D642 /* Pods-CashkaChoffe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashkaChoffe.release.xcconfig"; path = "Target Support Files/Pods-CashkaChoffe/Pods-CashkaChoffe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 			children = (
 				C990F3392B752B5F0030E451 /* TitleTextField.swift */,
 				C990F33B2B75324C0030E451 /* AppButton.swift */,
+				C9C2095A2B789A29001A4F64 /* CoffeeTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				C9025F232B77853F00EFE16B /* Network.swift in Sources */,
 				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
 				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
+				C9C2095B2B789A29001A4F64 /* CoffeeTableViewCell.swift in Sources */,
 				C990F3302B751F6A0030E451 /* LoginWireframe.swift in Sources */,
 				C9025F132B77646100EFE16B /* CoffeeShopsPresenter.swift in Sources */,
 				C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */,
