@@ -29,4 +29,7 @@ final class MenuWireframe: BaseWireframe<MenuViewController> {
 // MARK: - Extensions -
 
 extension MenuWireframe: MenuWireframeInterface {
+    func openOrder() {
+        navigationController?.pushWireframe(OrderWireframe())
+    }
 }

@@ -25,6 +25,12 @@
 		C91C6E582B792C27005FEAFB /* MenuWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E532B792C27005FEAFB /* MenuWireframe.swift */; };
 		C91C6E5A2B793025005FEAFB /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E592B793025005FEAFB /* CoffeeModel.swift */; };
 		C91C6E5C2B793936005FEAFB /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C6E5B2B793936005FEAFB /* MenuCollectionViewCell.swift */; };
+		C980073B2B81F3CB00444F4E /* OrderInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98007362B81F3CB00444F4E /* OrderInterfaces.swift */; };
+		C980073C2B81F3CB00444F4E /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98007372B81F3CB00444F4E /* OrderPresenter.swift */; };
+		C980073D2B81F3CB00444F4E /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98007382B81F3CB00444F4E /* OrderViewController.swift */; };
+		C980073E2B81F3CB00444F4E /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98007392B81F3CB00444F4E /* OrderInteractor.swift */; };
+		C980073F2B81F3CB00444F4E /* OrderWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C980073A2B81F3CB00444F4E /* OrderWireframe.swift */; };
+		C98007412B81F4B600444F4E /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98007402B81F4B600444F4E /* OrderModel.swift */; };
 		C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F3192B751EE80030E451 /* BaseWireframe.swift */; };
 		C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31A2B751EE80030E451 /* FormatterInterface.swift */; };
 		C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */; };
@@ -65,6 +71,12 @@
 		C91C6E532B792C27005FEAFB /* MenuWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWireframe.swift; sourceTree = "<group>"; };
 		C91C6E592B793025005FEAFB /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 		C91C6E5B2B793936005FEAFB /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		C98007362B81F3CB00444F4E /* OrderInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderInterfaces.swift; path = CashkaChoffe/Modules/Order/OrderInterfaces.swift; sourceTree = SOURCE_ROOT; };
+		C98007372B81F3CB00444F4E /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderPresenter.swift; path = CashkaChoffe/Modules/Order/OrderPresenter.swift; sourceTree = SOURCE_ROOT; };
+		C98007382B81F3CB00444F4E /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderViewController.swift; path = CashkaChoffe/Modules/Order/OrderViewController.swift; sourceTree = SOURCE_ROOT; };
+		C98007392B81F3CB00444F4E /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderInteractor.swift; path = CashkaChoffe/Modules/Order/OrderInteractor.swift; sourceTree = SOURCE_ROOT; };
+		C980073A2B81F3CB00444F4E /* OrderWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderWireframe.swift; path = CashkaChoffe/Modules/Order/OrderWireframe.swift; sourceTree = SOURCE_ROOT; };
+		C98007402B81F4B600444F4E /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		C990F3192B751EE80030E451 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		C990F31A2B751EE80030E451 /* FormatterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterInterface.swift; sourceTree = "<group>"; };
 		C990F31B2B751EE80030E451 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
@@ -136,6 +148,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C980072B2B81F38200444F4E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				C98007362B81F3CB00444F4E /* OrderInterfaces.swift */,
+				C98007372B81F3CB00444F4E /* OrderPresenter.swift */,
+				C98007382B81F3CB00444F4E /* OrderViewController.swift */,
+				C98007392B81F3CB00444F4E /* OrderInteractor.swift */,
+				C980073A2B81F3CB00444F4E /* OrderWireframe.swift */,
+			);
+			name = Order;
+			path = "Перейти к оплате";
+			sourceTree = "<group>";
+		};
 		C990F30E2B751AE30030E451 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,9 +177,10 @@
 		C990F3252B751F4A0030E451 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C990F3372B75249E0030E451 /* Menu */,
-				C990F3362B7524830030E451 /* CoffeeShops */,
 				C990F3262B751F540030E451 /* Login */,
+				C990F3362B7524830030E451 /* CoffeeShops */,
+				C990F3372B75249E0030E451 /* Menu */,
+				C980072B2B81F38200444F4E /* Order */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -214,6 +240,7 @@
 				C9025F262B778F3200EFE16B /* UserModel.swift */,
 				C9025F282B77D5CA00EFE16B /* CoffeeShopModel.swift */,
 				C91C6E592B793025005FEAFB /* CoffeeModel.swift */,
+				C98007402B81F4B600444F4E /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -395,6 +422,7 @@
 				C990F3232B751EE80030E451 /* ViewInterface.swift in Sources */,
 				C91C6E5A2B793025005FEAFB /* CoffeeModel.swift in Sources */,
 				C9025F142B77646100EFE16B /* CoffeeShopsViewController.swift in Sources */,
+				C980073E2B81F3CB00444F4E /* OrderInteractor.swift in Sources */,
 				C9A70BE72B751A7C00E1B33E /* SceneDelegate.swift in Sources */,
 				C9025F152B77646100EFE16B /* CoffeeShopsInteractor.swift in Sources */,
 				C990F3202B751EE80030E451 /* FormatterInterface.swift in Sources */,
@@ -402,15 +430,19 @@
 				C990F33A2B752B5F0030E451 /* TitleTextField.swift in Sources */,
 				C990F32D2B751F6A0030E451 /* LoginPresenter.swift in Sources */,
 				C990F3212B751EE80030E451 /* UIStoryboardExtension.swift in Sources */,
+				C980073B2B81F3CB00444F4E /* OrderInterfaces.swift in Sources */,
+				C98007412B81F4B600444F4E /* OrderModel.swift in Sources */,
 				C9025F272B778F3200EFE16B /* UserModel.swift in Sources */,
 				C990F32C2B751F6A0030E451 /* LoginInterfaces.swift in Sources */,
 				C91C6E572B792C27005FEAFB /* MenuInteractor.swift in Sources */,
 				C990F3242B751EE80030E451 /* InteractorInterface.swift in Sources */,
 				C990F33C2B75324C0030E451 /* AppButton.swift in Sources */,
+				C980073F2B81F3CB00444F4E /* OrderWireframe.swift in Sources */,
 				C9025F192B77822200EFE16B /* MapViewController.swift in Sources */,
 				C990F32F2B751F6A0030E451 /* LoginInteractor.swift in Sources */,
 				C990F31F2B751EE80030E451 /* BaseWireframe.swift in Sources */,
 				C9025F232B77853F00EFE16B /* Network.swift in Sources */,
+				C980073C2B81F3CB00444F4E /* OrderPresenter.swift in Sources */,
 				C990F3222B751EE80030E451 /* PresenterInterface.swift in Sources */,
 				C990F32E2B751F6A0030E451 /* LoginViewController.swift in Sources */,
 				C91C6E582B792C27005FEAFB /* MenuWireframe.swift in Sources */,
@@ -421,6 +453,7 @@
 				C9025F122B77646000EFE16B /* CoffeeShopsInterfaces.swift in Sources */,
 				C9025F252B778C8600EFE16B /* NetworkError.swift in Sources */,
 				C91C6E552B792C27005FEAFB /* MenuPresenter.swift in Sources */,
+				C980073D2B81F3CB00444F4E /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

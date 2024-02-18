@@ -10,6 +10,7 @@
 import UIKit
 
 protocol MenuWireframeInterface: WireframeInterface {
+    func openOrder()
 }
 
 protocol MenuViewInterface: ViewInterface {
@@ -21,6 +22,7 @@ protocol MenuPresenterInterface: PresenterInterface {
 
     func item(at indexPath: IndexPath) -> CoffeeModel
     func didSelectItem(at indexPath: IndexPath)
+    func mainButtonAction()
 }
 
 protocol MenuInteractorInterface: InteractorInterface {

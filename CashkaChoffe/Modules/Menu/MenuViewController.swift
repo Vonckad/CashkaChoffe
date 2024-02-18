@@ -43,7 +43,7 @@ final class MenuViewController: UIViewController {
 
     @objc
     private func mainButtonAction() {
-        print("#debug mainButtonAction")
+        presenter.mainButtonAction()
     }
 
 }
@@ -61,7 +61,7 @@ private extension MenuViewController {
     
     func setupView() {
         view.backgroundColor = .white
-        mainButton.setTitle("На карте", for: .normal)
+        mainButton.setTitle("Перейти к оплате", for: .normal)
         mainButton.enable(true)
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
